@@ -1,0 +1,551 @@
+ /* styling for navbar
+    used less of css and more of bootstrap
+ */
+ body {
+     margin: 0px;
+     padding: 0px;
+     background-color: rgb(0, 0, 0);
+ }
+ 
+ .active{
+    color: white !important;
+ }
+
+ ::-webkit-scrollbar {
+     width: 5px;
+    }
+
+ ::-webkit-scrollbar-thumb {
+     background-color: #1f1e1e;
+     border-radius: 7px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+     background: white;
+ }
+
+.canvas-bg{
+    background-color: rgba(2, 2, 2, 0.851) !important; 
+}
+
+ .header {
+     background-color: #ffffff00;
+     transition: background-color 0.7s ease;
+     width: 100%;
+     position: fixed;
+     top: 0%;
+     z-index: 90;
+ }
+.drop:focus{
+    border:  none;
+}
+.drop:active{
+    border:  none !important;
+}
+ .header-scrolled {
+     background-color: rgba(2, 2, 2, 0.851);
+ }
+
+ .header-scrolled a{
+     color: whitesmoke !important;
+ }
+
+
+
+ .container-fluid a{
+     color: rgb(255, 255, 252);
+     font-size: larger;
+     font-weight: bolder;
+
+ }
+
+ .container-fluid a:hover {
+     color: white;
+     border-bottom: 1px solid white;
+ }
+
+ #brand {
+     font-size: 25px;
+ }
+
+ #brand:hover {
+     border: none;
+ }
+
+ #brand:focus {
+     border: none;
+ }
+
+ .container-fluid a:focus {
+     color: white;
+     border-bottom: 1px solid white;
+ }
+
+ .container-fluid span {
+     color: white;
+ }
+ .carousel-indicators{
+    display: flex;
+    justify-content: right;
+    margin-left: 24%;
+    padding-right: 40px;
+}
+/* i used carousel from bootstrap library to show trending movies*/
+.movie-indicator{
+    width:120px !important;
+    height: 80px !important; 
+    border-radius: 15px !important;
+    background-size: cover;
+    background-position: 50%;
+}
+.cbt{
+    height: inherit !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none;
+    background-color: transparent !important;
+}
+    
+.carousel-caption{
+    background: linear-gradient(to top, #000000 13%,#0c0c0cb9 27%, rgba(0, 0, 0, 0.1) 60%);
+    padding-left: 6%;
+    padding-bottom: 4%;
+    top: 0px;
+    background-color: #00000034;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: end;
+    text-align: left;
+    left: 0px;
+    line-height: 20px;}
+.carousel-caption div{
+    max-width: 50%;
+}
+
+
+/* .movie-box{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.384),
+    -10px -10px 30px rgba(0, 0, 0, 0.37);
+} */
+.movie-title{
+   text-transform: uppercase;
+    width: 50%;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.movie-details{
+    text-transform: capitalize;
+    display: flex;
+}
+.rating-figure {
+    margin-left: -2px;
+}
+.movie-description{
+    margin-top: 20px;
+}
+.trailer-buttons{
+    margin-top: 50px;
+    display: flex;
+}
+.button-holder{
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    width: 165px;
+    height: 45px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+#play-button{
+    border: 3px solid white;
+    transition: 0.5s ease;
+}
+#play-button:hover {
+background-color: white;
+}
+#play-button:hover a{
+    color: #000000 ;
+    font-weight: bold;
+}
+
+.movie-buttons{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+}
+
+#trailer-button{
+    z-index: 3;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.237);
+}
+#trailer-button:hover {
+    background-color: rgba(68, 67, 67, 0.237);
+}
+#trailer-button:hover a{
+color: white;
+}
+.top-count{
+    color: rgba(0, 0, 0, 0.867);
+    margin-top: -70px;
+    margin-left: 25px;
+    font-size: 200px;
+    font-weight: 1000;
+    -webkit-text-stroke: 3px white;
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 90vh;
+}
+
+@media only screen and (min-width:630px) and (max-width:1000px) {
+    #carouselExampleIndicators img {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .movie-indicator{
+       width:100px ;
+       height: 70px ; 
+   }
+   
+   .carousel-caption{
+       display: flex !important;
+       flex-direction: column;
+       justify-content: center;
+   }
+   .carousel-caption div{
+       max-width: 80%;
+   }
+}
+
+ @media only screen and (max-width:630px) {
+     #carouselExampleIndicators img {
+         width: 100%;
+         height:55vh;
+     }
+
+     .movie-indicator{
+        width:100px ;
+        height: 50px !important; 
+        border-radius: none !important;
+    }
+    .carousel-caption{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+}
+    .carousel-caption div{
+        max-width: 90%;
+    }
+    .trailer-buttons{
+        margin-top: 20px;
+        display: flex;
+        font-size: smaller;
+    }
+    .movie-title{
+        text-transform: uppercase;
+         width: 50%;
+         font-weight: 550;
+         font-size: 27px;
+         font-family: sans-serif;
+    }
+      
+     .movie-details span{
+         font-size: small ;
+    }
+     .rating-figure {
+        font-size: small !important;
+     }
+     .trailer-buttons{
+         margin-top: 20px;
+         display: flex;
+     }
+     .button-holder{
+         text-transform: uppercase;
+         display: grid;
+         place-items: center;
+         width: 120px;
+         height: 35px;
+         padding: 0px 7px;
+         border-radius: 5px;
+         transition: 0.3s;
+     }
+     #trailer-button{
+         margin-left: 20px;
+         background-color: rgba(255, 255, 255, 0.237);
+     }
+        }
+ 
+ 
+ @media only screen and (max-width:500px) {
+    #carouselExampleIndicators img {
+        width: 100%;
+        height: 45vh !important;
+    }
+}
+ 
+
+ /* styling for all section titles*/
+ .titles {
+    display: flex;
+    justify-content: center;
+     color: whitesmoke;
+     font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+ }
+
+ /* css styling for schedule section */
+    
+    .darkener {
+     margin-top: 10px;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ .movie-box {
+     display: flex;
+     margin-bottom: 2%;
+ }
+ .img-holder{
+    margin: 5px;
+    width: 230px;
+    height: 330px;
+    border-radius: 4px;
+ }
+
+ .text-holder {
+     padding-left: 1%;
+     color: ghostwhite;
+     max-width: 350px;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+ }
+
+
+ .button-hold{
+    display: flex;    
+    align-items: last baseline !important;    
+ }
+
+ #more-info-button a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .text-holder h4 {
+     color: whitesmoke;
+     font-weight: 700  !important;
+
+ }
+
+ .text-holder span {
+     margin: 5px 0px;
+     border-radius: 30px;
+     color: #4e51ff;
+     font-size: 15px;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+
+ .button-hold button {
+     background: transparent;
+     margin-right: 2%;
+    padding: 10px 20px;
+     font-weight: bold;
+     font-size: larger;
+     border: 2px solid white;
+     outline: none;
+     cursor: pointer;
+     transition: 0.5;
+     color: white;
+     transition: 0.5s ease;
+ }
+
+ .text-holder button:hover {
+     background-color: white;
+     color: #000000;
+ }
+
+
+ 
+ /* styling for upcoming movies */
+ .upcoming-movies-container {
+     width: 100%;
+     padding: 2% 2%;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+
+ .card {
+     padding: 0px;
+     min-width: 18.2rem;
+     background: transparent;
+     margin: 20px 10px;
+ }
+
+ .card img {
+     border-radius: 4px;
+     width: 18rem;
+     height: 32rem;
+ }
+
+ .card-body {
+     color: whitesmoke;
+     font-size: 30px;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+ }
+
+
+ /* styling for footer section*/
+ .footer2 {
+    margin-top: auto;
+     width: 100%;
+     background: rgb(9, 9, 9);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ .logo-holder {
+     font-weight: bolder;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .footer2 div {
+     width: 250px;
+     margin-top: 3vh;
+     min-height: 220px;
+     font-size: 15px;
+     line-height: 30px;
+     color: white;
+ }
+
+ .footer2 h4 {
+     margin-left: 30px;
+ }
+
+ .footer2 li {
+     list-style-type: none;
+ }
+
+ .footer2 a {
+     text-decoration: none;
+     color: whitesmoke;
+ }
+
+ .footer2 a:hover {
+     color: #4e51ff;
+ }
+
+ .comment-holder textarea {
+     outline: none;
+     width: 90%;
+     height: 120px;
+     border-radius: 3px;
+ }
+
+ .comment-holder button {
+     outline: none;
+     padding: 5px 40px;
+     font-weight: bold;
+     font-size: large;
+     border: none;
+     color: #000000;
+     border-radius: 40px;
+ }
+
+
+ .social-medias {
+     padding: 10px 0px;
+     width: 100%;
+     border-top: 1px solid rgba(196, 196, 196, 0.692);
+     display: flex;
+     justify-content: center;
+     gap: 0px 30px;
+ }
+
+ .social-medias i {
+     margin: 20px 10px;
+     padding: 2px 5px;
+     border-radius: 50%;
+ }
+
+ .social-medias a {
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+     background-color: #1f1e1e;
+     display: flex;
+     justify-content: center;
+ }
+
+ .social-hover {
+transition: 0.5s; 
+}
+ .social-hover:hover {
+     transform: scale(1.1);
+     box-shadow: 0px 0px 15px white;
+ }
+
+ .social-medias i {
+     color: white;
+ }
+
+ .preloader {
+     width: 100%;
+     height: 100vh;
+     background-color: rgba(0, 0, 0, 0.625);
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     z-index: 5;
+     transform: translate(-50%, -50%);
+ }
+
+ .circle {
+     margin-top: 25%;
+     margin-left: 50%;
+     width: 50px;
+     height: 50px;
+     z-index: 1000;
+     border-radius: 50%;
+     border-top: 4px solid #3498db;
+     border-right: 4px solid transparent;
+     animation: spin 1s linear infinite;
+ }
+
+ @keyframes spin {
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ @media only screen and (max-width:700px) {
+     .circle {
+         margin-top: 45%;
+         margin-left: 50%;
+     }
+ }
+
+ @media only screen and (max-width:500px) {
+     .circle {
+         margin-top: 45vh;
+         margin-left: 40%;
+     }
+    }

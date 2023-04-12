@@ -1,0 +1,201 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cap{
+    text-transform: capitalize;
+}
+.up{
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.holder{
+    margin-top: 80px !important;
+}
+
+.movie-trailer-section{
+    padding: 0px 0px 0px 20px;
+    width: 61%;
+    display: block;
+    color: whitesmoke;
+}
+@media only screen and (max-width:900px) {
+    .movie-trailer-section{
+        padding: 2%;
+        width: 96%;
+        display: block;
+    }
+
+    .trailer-box video{
+        margin-top: 20px;
+ 
+   }
+}
+.figure{
+    color: rgba(255, 255, 255, 0.842);
+    text-align: center;
+    align-self: center; 
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+.figure span{
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
+.figure .language{
+    font-weight: 400 !important;
+}
+.buttons-holder{
+    font-size: 21px;
+    font-weight: 550;
+}
+#pla{
+    background-color: white;
+}
+#download{
+    color: white !important;
+border: 3px solid white;
+}
+.play-button{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+ }       
+.genre span{
+    margin: 5px 0px;
+    padding: 4px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.copy{
+z-index: 10;
+width: 50%;
+margin-left: 20px;
+}
+.trailer-box{
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+}
+.trailer-box iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%; 
+    margin-bottom: 5px;
+    width: 100%;
+    outline: none;
+}
+.movie-description{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+
+@media only screen and (max-width:900px) {
+#extra-info{
+    display: none;
+}
+
+#button-holder-for-small-screen{
+    display: block;
+}
+}
+@media only screen and (max-width:900px) {
+    .holder{
+        margin-top: 50px !important;
+    }
+}
+@media only screen and (max-width:770px) {
+    .figure{
+        border: none !important;
+    }
+    #download{
+        margin-top: 20px;
+    }
+    .trailer-box{
+        height:40vh ;
+    }
+    .holder{
+        margin-top: 45px !important;
+    }
+}
+@media only screen and (min-width:900px) and (max-width:1200px) {
+.display{
+    display: none;
+}
+}
+.extra-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    width: 34%;
+    margin:-30px 3%;
+}
+
+.extra-info img{
+    border-radius: 4px;
+    width: 90%;
+    height: 80vh;
+    margin: 5%;
+}
+.extra-details{
+    padding: 0% 3%;
+}
+
+@media only screen and (max-width:1150px) {
+    .extra-info img{
+        height: 70vh !important;
+    }
+}
+
+/* styling for footer section*/
+.footer2{
+    margin-top: 3vh;
+    width: 100%;
+    background-color: #1f1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer2 div{
+    width: 250px;
+    margin-top: 3%;
+    min-height: 220px;
+    font-size: 15px;
+    line-height: 30px;
+    color: white;
+}
+
+.footer2 h4{
+    margin-left: 30px;
+}
+
+.footer2 li{
+    list-style-type: none;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer2 a:hover{
+    color: #03a9f4;
+}

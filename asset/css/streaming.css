@@ -1,0 +1,23 @@
+body{
+   margin: 0px;
+}
+
+.body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+video{
+   margin: 5px;
+   max-width: 100%;
+}
+
+.back-btn{
+   position: absolute;
+   margin-top: 55px;
+   border-radius: 50%;
+   padding: 10px 15px;
+   font-size: 40px !important;
+}
